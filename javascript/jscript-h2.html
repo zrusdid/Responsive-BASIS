@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Javascript h2: Conditions</title>
+</head>
+
+<body>
+
+<script>
+var a = 3;
+var b = 10;
+
+/*
+if(a == 3){
+	console.log('I am 3');
+}
+*/
+/*
+//declaration of a function
+function testVal(){
+	
+	alert('I am in the function');
+	if(b > a){
+		console.log( b + ' is greater than '+ a);
+	}else if( b < a){
+		console.log( b+ ' is less than '+ a);
+	}else{
+		console.log( 'equal' );
+	}
+	return 'Hi';
+}
+
+//calling a function
+//console.log(testVal());
+//console.log(typeof testVal);
+
+*/
+/*
+var testVal = function(){
+	
+	alert('I am in the function');
+	if(b > a){
+		console.log( b + ' is greater than '+ a);
+	}else if( b < a){
+		console.log( b+ ' is less than '+ a);
+	}else{
+		console.log( 'equal' );
+	}
+	return 'Hi';
+}();
+*/
+/*
+var testVal = function(){
+	
+	alert('I am in the function');
+	if(b > a){
+		console.log( b + ' is greater than '+ a);
+	}else if( b < a){
+		console.log( b+ ' is less than '+ a);
+	}else{
+		console.log( 'equal' );
+	}
+	return 'Hi';
+};
+
+testVal();
+console.log(typeof testVal);
+alert(typeof testVal);
+*/
+
+//javascript array
+/*
+var myCars = new Array('Toyota', 'Sedan', 'BMW');
+alert(myCars[0]);
+console.log(typeof myCars);
+*/
+/*
+//array literal
+var myCars = ['Toyota', ['a','b'], 'BMW'];
+console.log(typeof myCars);
+alert(myCars[1]);
+alert(myCars[1][0]);
+*/
+/*
+//javascript Object
+
+var myCar = new Object();
+
+myCar.door = 4;
+myCar.color = 'red';
+
+myCar.allCars = ['Toyota', 'Sedan', 'BMW'];
+
+myCar.drive = function(){
+	alert("I am driving");
+}
+
+
+//alert(myCar.door);
+//alert(myCar.allCars);
+myCar.drive();
+
+*/
+//Object Literal
+var myCar = {
+		
+		door:4,
+		color:'red',
+		allCars: ['sedan','BMW'],
+		
+		drive:function(){
+		
+			alert('I am driving');
+			return 'Hi';
+		},
+		talk:function(){
+			alert('I am talking');
+		}
+		
+}
+
+alert(myCar.drive());
+</script>
+
+</body>
+</html>
