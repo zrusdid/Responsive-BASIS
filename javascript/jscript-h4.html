@@ -12,8 +12,9 @@ var calculator = {
 	number1 : 1,
 	number2 : 2,
 	
-	add : function(number1, number2){		
-		var result = number1 + number2 ;		
+	add : function(){		
+		var result = arguments[0]+arguments[1];
+		console.log(typeof  arguments[0]);
 		return result;
 	},	
 	substract : function(){	
@@ -29,8 +30,8 @@ var calculator = {
 console.log(typeof calculator.multiply);
 console.log(typeof calculator.multiply());
 console.log(calculator.multiply());*/
-//console.log(calculator.add());
-console.log(calculator.add(3,4));
+console.log(calculator.add());
+//console.log(calculator.add('Moinul','Islam'));
 
 
 
