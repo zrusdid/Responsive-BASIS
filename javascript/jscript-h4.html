@@ -13,7 +13,8 @@ var calculator = {
 	number2 : 2,
 	
 	add : function(){		
-		return 'add';
+		var result = this.number1 + this.number2 ;		
+		return result;
 	},	
 	substract : function(){	
 		return 'substract';
@@ -24,10 +25,12 @@ var calculator = {
 
 };
 
-console.log(typeof calculator);
+/*console.log(typeof calculator);
 console.log(typeof calculator.multiply);
 console.log(typeof calculator.multiply());
-console.log(calculator.multiply());
+console.log(calculator.multiply());*/
+//console.log(calculator.add());
+console.log(calculator.add(3,4));
 
 
 
