@@ -9,13 +9,14 @@
 <script>
 var calculator = {
 	number1 : 1,
-	number2 : 2,	
-	add : function(){		
-		var result = 0;
+	number2 : 2,
+	result	: 0,	
+	
+	add : function(){	
 		for(var i = 0; i < arguments.length; i++){
-			result = result + arguments[i];
+			this.result = this.result + arguments[i];
 		}
-		return result;
+		return this.result;
 	},	
 	substract : function(){	
 		return 'substract';
