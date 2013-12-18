@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Javascript h3</title>
+
+</head>
+	<body>
+	
+	
+	<script>
+		//global and local variable
+		var a = 10;
+		var a = 111;
+		var b = 5;		
+		c = 'Hello';
+		d = 'Hi';
+		function testVar1(){
+			console.log("1. "+a +"-"+b +"-"+c+"-"+d);			
+		}		
+		function testVar2(){
+			console.log("2.1. "+a +"-"+b +"-"+c+"-"+d);
+			var	a = 11;
+			var	b = 6;
+			c = 'I am in function';
+			d = 'me too';			
+			console.log("2.2." +a +"-"+b +"-"+c+"-"+d);
+		}
+		testVar1();
+		testVar2();
+	
+	console.log("3." +a +"-"+b +"-"+c+"-"+d);
+	
+	</script>
+	</body>
+</html>
