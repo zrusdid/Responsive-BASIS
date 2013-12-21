@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0;}
+
+p{margin-bottom: 15px;}
+
+
+.fixed{overflow: hidden;}
+.floatLeft{float: left;}
+.floatRight{float: right;}
+
+.main{width: 980px; margin: 20px auto;}
+.header {}
+.header h1{font-size: 40px;}
+.header h2{}
+
+.redhedding{font-size: 30px; color: red;}
+
+.introduc, .mobile, .full, .ceasefire{border-bottom:2px solid;}
+
+.introducText{width: 460px;padding: 15px;}
+.introducDig{width: 460px;padding: 15px;}
+
+.mobileDig{width: 440px; padding: 15px 15px 0px 15px;}
+.mobileText{width: 480px; padding: 15px 15px 0px 15px;}
+
+.fullDig{}
+.fullDig img{width: 980px;}
+
+.fullText{width: 450px; padding: 20px;}
+
+
+.ceasefireList ul{margin: 0; padding: 0; list-style: none;}
+.sPic{width: 100px;}
+.sText{width: 880px;}
