@@ -6,16 +6,24 @@
 <style type="text/css">
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
 }
 #main {
-	width:960px;
-	margin:auto;
+	width: 960px;
+	margin: auto;
 }
-#header {
-	font-size:12px;
+#header_left {
 	clear: both;
-	height:20px;
+	height: 15px;
+	margin-top: -20px;
 }
+#header_right {
+	clear: both;
+	height: 15px;
+	margin-top: -20px;
+	margin-right: 200px;
+}
+
 legend {
 	margin: 0;
 	padding: 0;
@@ -24,100 +32,109 @@ legend {
 	left: auto;
 	float: none;
 	display: block;
+	font-size: 12px;
 	font-weight: bold;
-	font-size: 14px;
 	line-height: 18px;
+}
+h3{
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+h4{
+	text-align: center;
+	margin: auto;
+	font-size: 12px;
 }
 </style>
 <body>
 <div id="main">
   <h3 style="text-align:center">U.S. STANDARD CERTIFICATE OF LIVE BIRTH</h3>
-  <div id="header">
-    <div style="float:left;">LOCAL FILE NO.</div>
-    <div style="float:right;">BIRTH NUMBER:</div>
+  <div>
+    <div id="header_left" style="float:left;">LOCAL FILE NO.</div>
+    <div id="header_right" style="float:right;">BIRTH NUMBER:</div>
   </div>
   <div>
     <fieldset>
       <legend>C H I L D</legend>
-      <label>1. CHILD’S NAME (First, Middle, Last, Suffix)<br />
+      <label>1. CHILDâ€™S NAME (First, Middle, Last, Suffix)<br />
         <input type="text" name="c_first_name"/>
         <input type="text" name="c_middle_name"/>
         <input type="text" name="c_last_name"/>
         <input type="text" name="c_suffix"/>
       </label>
-      <br />
+      <br /><br />
       <label>2. TIME OF BIRTH(24 hr)
         <input type="text" name="c_birth_time"/>
       </label>
-      <br />
+      <br /><br />
       <label>3. SEX
         <input type="text" name="c_sex"/>
       </label>
-      <br />
+      <br /><br />
       <label>4. DATE OF BIRTH (Mo/Day/Yr)
         <input type="date" name="c_birth_date"/>
       </label>
-      <br />
+      <br /><br />
       <label>5. FACILITY NAME (If not institution, give street and number)
         <input type="text" name="c_facility"/>
       </label>
-      <br />
+      <br /><br />
       <label>6. CITY, TOWN, OR LOCATION OF BIRTH
         <input type="text" name="c_town"/>
       </label>
-      <br />
+      <br /><br />
       <label>7. COUNTY OF BIRTH
         <input type="text" name="c_country"/>
       </label>
-      <br />
+      <br /><br />
     </fieldset>
     <fieldset>
       <legend>M O T H E R</legend>
-      <label>8a. MOTHER’S CURRENT LEGAL NAME (First, Middle, Last, Suffix)<br />
+      <label>8a. MOTHERâ€™S CURRENT LEGAL NAME (First, Middle, Last, Suffix)<br />
         <input type="text" name="m_first_name"/>
         <input type="text" name="m_middle_name"/>
         <input type="text" name="m_last_name"/>
         <input type="text" name="m_suffix"/>
       </label>
-      <br />
+      <br /><br />
       <label>8b. DATE OF BIRTH (Mo/Day/Yr)
         <input type="date" name="m_"/>
       </label>
-      <br />
-      <label>8c. MOTHER’S NAME PRIOR TO FIRST MARRIAGE (First, Middle, Last, Suffix)
+      <br /><br />
+      <label>8c. MOTHERâ€™S NAME PRIOR TO FIRST MARRIAGE (First, Middle, Last, Suffix)
         <input type="text" name="m_"/>
       </label>
-      <br />
+      <br /><br />
       <label>8d. BIRTHPLACE (State, Territory, or Foreign Country)
         <input type="m_date" name="suffix"/>
       </label>
-      <br />
+      <br /><br />
       <label>9a. RESIDENCE OF MOTHER-STATE
         <input type="text" name="m_state"/>
       </label>
-      <br />
+      <br /><br />
       <label>9b. COUNTY
         <input type="text" name="m_county"/>
       </label>
-      <br />
+      <br /><br />
       <label>9c. CITY, TOWN, OR LOCATION
         <input type="text" name="m_city"/>
       </label>
-      <br />
+      <br /><br />
       <label>9d. STREET AND NUMBER
         <input type="text" name="m_street"/>
       </label>
-      <br />
+      <br /><br />
       <label>9e. APT. NO.
         <input type="text" name="m_apt"/>
       </label>
-      <br />
+      <br /><br />
       <label>9f. ZIP CODE
         <input type="text" name="m_zip"/>
       </label>
-      <br />
+      <br /><br />
       <label>9g. INSIDE CITY LIMITS?
-      <br />
+      <br /><br />
    	    <label>
           <input type="checkbox" name="city_limit" value="checkbox" id="city_limit_0">
           Yes</label>
@@ -129,27 +146,97 @@ legend {
     </fieldset>
     <fieldset>
       <legend>F A T H E R</legend>
-      <label>10a. FATHER’S CURRENT LEGAL NAME (First, Middle, Last, Suffix)
-        <input type="text" name="c_first_name"/>
+      <label>10a. FATHERâ€™S CURRENT LEGAL NAME (First, Middle, Last, Suffix)<br />
+        <input type="text" name="f_first_name"/>
+        <input type="text" name="f_middle_name"/>
+        <input type="text" name="f_last_name"/>
+        <input type="text" name="f_suffix"/>
       </label>
-      <label>
-        <input type="text" name="c_middle_name"/>
-      </label>
-      <label>
-        <input type="text" name="c_last_name"/>
-      </label>
-      <label>
-        <input type="text" name="c_suffix"/>
-      </label>
-      <br />
+      <br /><br />
       <label>10b. DATE OF BIRTH (Mo/Day/Yr)
-        <input type="text" name="c_birth_time"/>
+        <input type="text" name="f_birth_time"/>
       </label>
-      <br />
+      <br /><br />
       <label>10c. BIRTHPLACE (State, Territory, or Foreign Country)
-        <input type="text" name="c_sex"/>
+        <input type="text" name="f_sex"/>
       </label>
       <br />
+    </fieldset>
+    <fieldset>
+      <legend>C E R T I F I E R</legend>
+      <label>11. CERTIFIER'S NAME:
+        <input type="text" maxlength="50" size="50" name="c_first_name"/>
+      </label>
+      <br /><br />
+      <label>TITLE:</label>
+        <label>
+          <input type="checkbox" name="title" value="checkbox" id="title_0">
+          MD</label>
+        <label>
+          <input type="checkbox" name="title" value="checkbox" id="title_1">
+          DO</label>
+        <label>
+          <input type="checkbox" name="title" value="checkbox" id="title_2">
+          HOSPITAL ADMIN</label>
+        <label>
+          <input type="checkbox" name="title" value="checkbox" id="title_3">
+          CNM/CM</label>
+        <label>
+          <input type="checkbox" name="title" value="checkbox" id="title_4">
+          OTHER MIDWIFE</label>
+        <label>
+          <input type="checkbox" name="title" value="checkbox" id="title_5">
+          OTHER(Specify)
+          <input type="text" maxlength="50" size="50" name="c_first_name"/>
+          </label>
+       <br /><br />
+       <label>12. DATE CERTIFIED
+        MM:&nbsp;<input type="text" maxlength="2" size="2" name="c_birth_time"/>
+        DD:&nbsp;<input type="text" maxlength="2" size="2" name="c_birth_time"/>
+        YYYY:&nbsp;<input type="text" maxlength="4" size="4" name="c_birth_time"/>
+      </label>
+      <br /><br />
+      <label>13. DATE FILED BY REGISTRAR
+        MM:&nbsp;<input type="text" maxlength="2" size="2" name="c_birth_time"/>
+        DD:&nbsp;<input type="text" maxlength="2" size="2" name="c_birth_time"/>
+        YYYY:&nbsp;<input type="text" maxlength="4" size="4" name="c_birth_time"/>
+      </label>
+      <br />
+    </fieldset>
+    <h4>INFORMATION FOR ADMINISTRATIVE USE</h4>
+    <fieldset>
+      <legend>M O T H E R</legend>
+      <label>14. MOTHER'S MAILING ADDRESS: 9 Same as residence, or:&nbsp;
+      State:&nbsp;<input type="text" maxlength="20" size="20" name="m_state"/>&nbsp;
+      City,&nbsp;<input type="text" maxlength="20" size="20" name="m_city"/><br /><br />
+      Town, or Location:&nbsp;<input type="text" maxlength="20" size="20" name="m_town"/>&nbsp;
+      Street & Number:&nbsp;<input type="text" maxlength="20" size="20" name="m_street"/>&nbsp;
+      Apartment No.:&nbsp;<input type="text" maxlength="10" size="10" name="m_apt"/>&nbsp;
+      Zip Code:&nbsp;<input type="text" maxlength="10" size="10" name="m_zip"/>&nbsp;
+      </label>
+      <br /><br />
+      <label>15. MOTHER MARRIED? (At birth, conception, or any time between)
+      <input type="checkbox" name="title" value="checkbox" id="15_0"> Yes 
+      <input type="checkbox" name="title" value="checkbox" id="15_1"> No<br />
+	  IF NO, HAS PATERNITY ACKNOWLEDGEMENT BEEN SIGNED IN THE HOSPITAL?
+      <input type="checkbox" name="title" value="checkbox" id="15_0"> Yes 
+      <input type="checkbox" name="title" value="checkbox" id="15_1"> No
+      </label>
+      <br /><br />
+       <label>16. SOCIAL SECURITY NUMBER REQUESTED FOR CHILD?
+      <input type="checkbox" name="title" value="checkbox" id="15_0"> Yes 
+      <input type="checkbox" name="title" value="checkbox" id="15_1"> No<br />
+	  </label>
+      <br /><br />
+      <label>17. FACILITY ID. (NPI)
+      <input type="text" maxlength="20" size="20" name="facility_id"/>
+      </label>
+      <br /><br />
+      <label>18. MOTHER'S SOCIAL SECURITY NUMBER:
+      <input type="text" maxlength="30" size="30" name="m_ssn"/>
+      19. FATHER'S SOCIAL SECURITY NUMBER:
+      <input type="text" maxlength="30" size="30" name="f_ssn"/>
+      </label>
     </fieldset>
   </div>
 </div>
