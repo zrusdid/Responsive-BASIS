@@ -6,12 +6,27 @@
 </head>
 <style type="text/css">
 body{
-font-family:Arial, Helvetica, sans-serif;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
 }
 .main{
 width:960px;
 margin:auto;
 }
+h3 {
+	font-size: 18px;
+}
+h4 {
+	text-align: center;
+	margin: auto;
+	font-size: 12px;
+}
+legend {
+	font-size: 12px;
+	font-weight: bold;
+	}
+label{
+	padding-right:5px;}
 .intro{
 clear:both;
 height:20px;
@@ -32,53 +47,53 @@ width:700px;
 		<div style="float:left; font-size:12px">LOCAL FILE NO.</div>
 		<div style="float:right; font-size:12px">BIRTH NUMBER:</div>
 	</div>
-	<div class="child">
 	 <!--<div class="child_info_left">C H I L D</div>
 	 <div class="child_info_right"></div>-->
 	 <fieldset><legend>C H I LD</legend>
-	 <label>1. CHILD’S NAME (First, Middle, Last, Suffix) <input type="text" name="child_first_name"/></label>
-	<label> <input type="text" name="child_middle_name"/></label>
-	 <label><input type="text" name="child_last_name"/></label>
-	 <label><input type="text" name="child_suffix"/></label><br />
-	 <label>2. TIME OF BIRTH(24 hr)<input type="text" name="child_birth_time"/></label><br />
-	 <label>3. SEX<input type="text" name="child_sex"/></label><br />
-	  <label>4. DATE OF BIRTH (Mo/Day/Yr)<input type="date" name="child_birth_date"/></label><br />
-	   <label>5. FACILITY NAME (If not institution, give street and number)<input type="text" name="child_facility"/></label><br />
-	   <label>6. CITY, TOWN, OR LOCATION OF BIRTH<input type="text" name="child_town"/></label><br />
-	   <label>7. COUNTY OF BIRTH<input type="text" name="child_country"/></label><br />
+	 <label>1. CHILD’S NAME (First, Middle, Last, Suffix)&nbsp; <input type="text" placeholder="Fisrt Name" name="child_first_name"/></label>
+	<label> <input type="text" placeholder="Middle Name" name="child_middle_name"/></label>
+	 <label><input type="text" placeholder="Last Name" name="child_last_name"/></label>
+	 <label><input type="text" placeholder="Suffix" name="child_suffix"/></label><br />
+<br />
+	 <label>2. TIME OF BIRTH(24 hr) &nbsp;<input type="text" placeholder="Time" name="child_birth_time"/></label><br /><br />
+	 <label>3. SEX &nbsp;</label><input type="radio" name="sex" value="Male">Male<input type="radio" name="sex" value="Female">Female<br /><br />
+	  <label>4. DATE OF BIRTH (Mo/Day/Yr) &nbsp;<input type="date" placeholder="Date Of Birth" name="child_birth_date"/></label><br /><br />
+	   <label>5. FACILITY NAME (If not institution, give street and number) &nbsp;<input type="text" name="child_facility"/></label><br /><br />
+	   <label>6. CITY, TOWN, OR LOCATION OF BIRTH <input type="text" name="child_town"/></label><br /><br />
+	   <label>7. COUNTY OF BIRTH &nbsp;<input type="text" name="child_country"/></label><br /><br />
 	   
 	 </fieldset>
 	 <fieldset><legend>M O T H E R</legend>
-	 <label>8a. MOTHER’S CURRENT LEGAL NAME (First, Middle, Last, Suffix) <input type="text" name="mother_first_name"/></label>
-	<label> <input type="text" name="mother_middle_name"/></label>
-	 <label><input type="text" name="mother_last_name"/></label>
-	 <label><input type="text" name="mother_suffix"/></label><br />
-	 <label>8b. DATE OF BIRTH (Mo/Day/Yr)<input type="date" name="mother_"/></label><br />
-	 <label>8c. MOTHER’S NAME PRIOR TO FIRST MARRIAGE (First, Middle, Last, Suffix)<input type="text" name="mother_"/></label><br />
-	  <label>8d. BIRTHPLACE (State, Territory, or Foreign Country)<input type="mother_date" name="suffix"/></label><br />
-	  <label>9a. RESIDENCE OF MOTHER-STATE<input type="text" name="mother_"/></label><br />
-	  <label>9b. COUNTY<input type="text" name="mother_"/></label><br />
-	  <label>9c. CITY, TOWN, OR LOCATION<input type="text" name="mother_"/></label><br />
-	  <label>9d. STREET AND NUMBER<input type="text" name="mother_"/></label><br />
-	  <label>9e. APT. NO.<input type="text" name="mother_"/></label><br />
-	  <label>9f. ZIP CODE<input type="text" name="mother_"/></label><br />
-	  <label>9g. INSIDE CITY LIMITS?</label><br />
+	 <label>8a. MOTHER’S CURRENT LEGAL NAME (First, Middle, Last, Suffix) &nbsp;<input type="text" placeholder="Fisrt Name" name="mother_first_name"/></label>
+	<label> <input type="text" placeholder="Middle Name" name="mother_middle_name"/></label>
+	 <label><input type="text" placeholder="Last Name" name="mother_last_name"/></label>
+	 <label><input type="text" placeholder="Suffix" name="mother_suffix"/></label><br /><br />
+	 <label>8b. DATE OF BIRTH (Mo/Day/Yr)&nbsp;<input type="date" name="mother_birth_date"/></label><br /><br />
+	 <label>8c. MOTHER’S NAME PRIOR TO FIRST MARRIAGE (First, Middle, Last, Suffix)&nbsp;<input type="text" name="prior_mother_first_name"/></label><label> <input type="text" name="prior_mother_middle_name"/></label>
+	 <label><input type="text" name="prior_mother_last_name"/></label>
+	 <label><input type="text" name="prior_mother_suffix"/></label><br /><br />
+	  <label>8d. BIRTHPLACE (State, Territory, or Foreign Country)&nbsp;<input type="mother_birthplace" name="mother_birthplace"/></label><br /><br />
+	  <label>9a. RESIDENCE OF MOTHER-STATE&nbsp;<input type="text" name="mother_residence"/></label><br /><br />
+	  <label>9b. COUNTY&nbsp;<input type="text" name="mother_country"/></label><br /><br />
+	  <label>9c. CITY, TOWN, OR LOCATION&nbsp;<input type="text" name="mother_city"/></label><br /><br />
+	  <label>9d. STREET AND NUMBER&nbsp;<input type="text" name="mother_street"/></label><br /><br />
+	  <label>9e. APT. NO.&nbsp;<input type="text" name="mother_apt"/></label><br /><br />
+	  <label>9f. ZIP CODE&nbsp;<input type="text" name="mother_zip"/></label><br /><br />
+	  <label>9g. INSIDE CITY LIMITS?&nbsp;</label><input name="city_limit" type="radio" value="y">Yes<input name="city_limit" type="radio" value="n">No<br />
 	  </fieldset>
 	  
 	  <fieldset><legend>F A T H E R</legend>
-	 <label>10a. FATHER’S CURRENT LEGAL NAME (First, Middle, Last, Suffix) <input type="text" name="child_first_name"/></label>
-	<label> <input type="text" name="child_middle_name"/></label>
-	 <label><input type="text" name="child_last_name"/></label>
-	 <label><input type="text" name="child_suffix"/></label><br />
-	 <label>10b. DATE OF BIRTH (Mo/Day/Yr)<input type="text" name="child_birth_time"/></label><br />
-	 <label>10c. BIRTHPLACE (State, Territory, or Foreign Country)<input type="text" name="child_sex"/></label><br />
-	  
-	 </fieldset>
-	 
-	</div>
-	<div class="mother"></div>
-	<div class="father"></div>
-	<div class="child"></div>
+	 <label>10a. FATHER’S CURRENT LEGAL NAME (First, Middle, Last, Suffix)&nbsp; <input type="text" placeholder="Fisrt Name" name="father_first_name"/></label>
+	<label> <input type="text" placeholder="Middle Name" name="father_middle_name"/></label>
+	 <label><input type="text" placeholder="Last Name" name="father_last_name"/></label>
+	 <label><input type="text" placeholder="Suffix" name="father_suffix"/></label><br /><br />
+	 <label>10b. DATE OF BIRTH (Mo/Day/Yr)&nbsp;<input type="text" name="child_birth_time"/></label><br /><br />
+	 <label>10c. BIRTHPLACE (State, Territory, or Foreign Country)&nbsp;<input type="text" name="father_birth_place"/></label><br /><br />
+ </fieldset>
+ <fieldset>
+ <legend>CERTIFIER</legend>
+ 
+ </fieldset>
 
 </div>
 </body>
