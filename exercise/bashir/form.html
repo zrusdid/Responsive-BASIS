@@ -92,8 +92,137 @@ width:700px;
  </fieldset>
  <fieldset>
  <legend>CERTIFIER</legend>
- 
- </fieldset>
+ <label>11. CERTIFIER'S NAME:
+        <input type="text" size="40" name="certifier_name"/></label>
+        <br />
+        <br />
+        <label> TITLE:
+        <input type="checkbox" name="title" value="checkbox"/></label>
+        <label>MD
+        <input type="checkbox" name="title" value="checkbox" /> </label>
+       <label> DO
+        <input type="checkbox" name="title" value="checkbox" /> </label>
+       <label> HOSPITAL ADMIN
+        <input type="checkbox" name="title" value="checkbox"/> </label>
+        <label>CNM/CM
+        <input type="checkbox" name="title" value="checkbox"/> </label>
+       <label> OTHER MIDWIFE
+        <input type="checkbox" name="title" value="checkbox"/> </label>
+        <label>OTHER(Specify)
+        <input type="text" size="40" name="c_first_name"/> </label>
+        <br />
+        <br />
+       <label> 12. DATE CERTIFIED
+        MM:&nbsp;
+        <input type="text" maxlength="2" size="2" name="child_birth_m"/> </label>
+       <label> DD:&nbsp;
+        <input type="text" maxlength="2" size="2" name="child_birth_d"/> </label>
+       <label> YYYY:&nbsp;
+        <input type="text" maxlength="4" size="4" name="child_birth_y"/> </label>
+        <br />
+        <br />
+      <label>  13. DATE FILED BY REGISTRAR
+        MM:&nbsp;
+        <input type="text" maxlength="2" size="2" name="child_birth_m_regi"/> </label>
+       <label> DD:&nbsp;
+        <input type="text" maxlength="2" size="2" name="child_birth_d_regi"/> </label>
+       <label>YYYY:&nbsp;
+        <input type="text" maxlength="4" size="4" name="child_birth_y_regi"/>
+      </label>
+  </fieldset>
+  <h4>INFORMATION FOR ADMINISTRATIVE USE</h4>
+  <fieldset>
+      <legend>M O T H E R</legend>
+      <label>14. MOTHER'S MAILING ADDRESS: 9 Same as residence, or:&nbsp;</label>
+       <label> State:&nbsp;
+        <input type="text" size="20" name="mother_state"/> </label>
+        &nbsp;
+       <label> City,&nbsp;
+        <input type="text"  size="20" name="mother_city"/> </label>
+        <br />
+        <br />
+      <label>  Town, or Location:&nbsp;
+        <input type="text" size="20" name="mother_town"/> </label>
+        &nbsp;
+       <label> Street & Number:&nbsp;
+        <input type="text" size="20" name="mother_street"/> </label>
+        &nbsp;
+        <label>Apartment No.:&nbsp;
+        <input type="text"  size="10" name="mother_apt"/> </label>
+        &nbsp;
+        <label>Zip Code:&nbsp;
+        <input type="text"  size="10" name="mother_zip"/> </label>
+        &nbsp; <br />
+        <br />
+       <label> 15. MOTHER MARRIED? (At birth, conception, or any time between)
+        <input type="checkbox" name="title" value="checkbox" > </label>
+        Yes
+        <input type="checkbox" name="title" value="checkbox" >
+        No<br />
+       <label> IF NO, HAS PATERNITY ACKNOWLEDGEMENT BEEN SIGNED IN THE HOSPITAL?
+        <input type="checkbox" name="title" value="checkbox" > </label>
+        Yes
+        <input type="checkbox" name="title" value="checkbox" >
+        No <br />
+        <br />
+       <label> 16. SOCIAL SECURITY NUMBER REQUESTED FOR CHILD?
+        <input type="checkbox" name="title" value="checkbox"> </label>
+        Yes
+        <input type="checkbox" name="title" value="checkbox">
+        No<br />
+        <br />
+        <br />
+       <label> 17. FACILITY ID. (NPI)
+        <input type="text" size="20" name="facility_id"/> </label>
+        <br />
+        <br />
+       <label> 18. MOTHER'S SOCIAL SECURITY NUMBER:
+        <input type="text" size="30" name="m_ssn"/> </label>
+       <label> 19. FATHER'S SOCIAL SECURITY NUMBER:
+        <input type="text"  size="30" name="f_ssn"/>
+      </label>
+    </fieldset>
+    <h4>INFORMATION FOR MEDICAL AND HEALTH PURPOSES ONLY</h4>
+    <fieldset>
+    <legend>M O T H E R</legend>
+    <label>20. MOTHER’S EDUCATION (Check the 
+box that best describes the highest 
+degree or level of school completed at 
+the time of delivery)</label><br /><br /><input name="checkbox" type="checkbox" value="8th">8th grade or less<br /><br />
+<input name="checkbox" type="checkbox" value="9th">9th - 12th grade, no diploma<br /><br />
+<input name="checkbox" type="checkbox" value="ged">High school graduate or GED completed <br /><br />
+<input name="checkbox" type="checkbox" value="college">Some college credit but no degree<br /><br />
+<input name="checkbox" type="checkbox" value="associate">Associate degree (e.g., AA, AS)<br /><br />
+<input name="checkbox" type="checkbox" value="bachelor">Bachelor’s degree (e.g., BA, AB, BS)<br /><br />
+<input name="checkbox" type="checkbox" value="msc">Master’s degree (e.g., MA, MS,MEng, MEd, MSW, MBA) <br /><br />
+
+<input name="checkbox" type="checkbox" value="doctor">Doctorate (e.g., PhD, EdD) or Professional degree (e.g., MD, DDS, DVM, LLB, JD)<br /><br /><br />
+21. MOTHER OF HISPANIC ORIGIN? (Check 
+the box that best describes whether the 
+mother is Spanish/Hispanic/Latina. Check the 
+"No" box if mother is not Spanish/Hispanic/Latina)
+<br /><br /><input name="checkbox" type="checkbox" value="no_spanish">No, not Spanish/Hispanic/Latina<br /><br />
+<input name="checkbox" type="checkbox" value="yes_spanish">Yes, Mexican, Mexican American, Chicana<br /><br />
+<input name="checkbox" type="checkbox" value="yes_rican">Yes, Puerto Rican<br /><br />
+<input name="checkbox" type="checkbox" value="yes_cuban">Yes, Cuban<br /><br />
+<input name="checkbox" type="checkbox" value="yes_other">Yes, other Spanish/Hispanic/Latina (Specify)&nbsp;<input name="m_other_origin" type="text" ><br /><br /><br />
+22. MOTHER’S RACE (Check one or more races to indicate 
+what the mother considers herself to be)<br /><br />
+<input name="checkbox" type="checkbox" value="white">White<br /><br />
+<input name="checkbox" type="checkbox" value="black">Black or African American<br /><br />
+<input name="checkbox" type="checkbox" value="yes_cuban">American Indian or Alaska Native (Name of the enrolled or principal tribe)&nbsp;<input type="text" name="native" /><br /><br />
+<input name="checkbox" type="checkbox" value="asian_indian">Asian Indian<br /><br />
+<input name="checkbox" type="checkbox" value="chinese">Chinese<br /><br />
+<input name="checkbox" type="checkbox" value="filipino">Filipino<br /><br />
+<input name="checkbox" type="checkbox" value="japanese">Japanese <br /><br />
+<input name="checkbox" type="checkbox" value="vietnamese">Vietnamese<br /><br />
+<input name="checkbox" type="checkbox" value="other_asian">Other Asian (Specify)&nbsp; <input type="text" name="other_asian"/><br /><br />
+<input name="checkbox" type="checkbox" value="hawaiian">Native Hawaiian<br /><br />
+<input name="checkbox" type="checkbox" value="guamanian">Guamanian or Chamorro<br /><br />
+<input name="checkbox" type="checkbox" value="samoan">Samoan<br /><br />
+<input name="checkbox" type="checkbox" value="other_specify_pacific">Other Pacific Islander (Specify)&nbsp; <input type="text" name="other_pacific"/><br /><br />
+<input name="checkbox" type="checkbox" value="other_specify">Other (Specify) &nbsp;<input type="text" name="other_pacific"/><br /><br />
+</fieldset>
 
 </div>
 </body>
