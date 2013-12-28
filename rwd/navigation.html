@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Responsive Navigation</title>
+<style>
+@media screen and (min-width: 300px) {
+ul li{
+	list-style:none;
+	background-color:#00CCFF;
+	border:1px solid #993333;
+	width:200px;
+	padding:1px;
+	margin:1px;
+}
+
+ul.menuItem{
+	display:none;
+}
+}
+@media screen and (min-width: 520px) {
+
+ul li{
+	list-style:none;
+	background-color:#00CCFF;
+	border:1px solid #993333;
+	padding:1px;
+	margin:1px;
+	display:inline;
+}
+
+button.btnMenu{
+	display:none;
+}
+
+ul.menuItem{
+	display:block;
+}
+}
+
+</style>
+</head>
+
+<body>
+<button class="btnMenu" onclick="openMenu()">Menu</button>
+<ul id="menu" class="menuItem">
+	<li>List Item 1</li>
+	<li>List Item 2</li>
+	<li>List Item 3</li>
+	<li>List Item 4</li>
+	<li>List Item 5</li>
+	<li onclick="closeMenu()">Close</li>
+</ul>
+
+<script>
+	function openMenu(){
+	
+		document.getElementById('menu').style.display = 'block';
+	}
+	
+	function closeMenu(u){
+	
+		document.getElementById('menu').style.display = 'none';
+	}
+
+</script>
+
+</body>
+</html>
