@@ -3,23 +3,27 @@
 <head>
 <script>
 var txt="";
-function message()
+function aSampleFunction()
 {
   try
   {
-  	adddlert("Welcome guest!");
+  	alert("Welcome guest!");
+	throw "Hi: throw";
   }
-  catch(moinul)
+  catch(err)
   {
-    alert(moinul.message);
+    alert(err);
+	//alert(err.name+"\n"+err.message);
+  }
+  finally{
+  	alert('Final: hello');
   }
 }
 </script>
 </head>
 
 <body>
-<input type="button" value="View message" onclick="message()">
-
+<input type="button" value="View message" onClick="aSampleFunction()">
 </body>
 
 </html>
