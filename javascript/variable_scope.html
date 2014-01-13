@@ -1,0 +1,30 @@
+<script>
+
+
+var number1 = 5;
+    //number2 = 12;
+console.log("outside function: "+number1);
+//console.log("outside function: "+number2)
+
+function checkVariableScope1(){	
+	 number1 = 6;
+	//var	number2 = 13;
+	
+	console.log("inside function: "+number1);
+	//console.log("inside function: "+number2);
+}
+checkVariableScope1();
+
+function checkVariableScope2(){	
+	//var number1 = 6;
+		//number2 = 14;
+	
+	//console.log("inside 2nd function: "+number1);
+	console.log("inside function: "+number2);
+}
+//checkVariableScope2();
+
+//console.log("again outside function: "+number1);
+console.log("again outside function: "+number1);
+
+</script>
