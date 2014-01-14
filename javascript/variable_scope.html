@@ -1,6 +1,48 @@
 <script>
+/*
+//1. way of function declaration
+function name1(){
+	alert('name1');
+}
+//call
+name1();
+//2. way of function declaration
+var name2 = function(){
+	alert('name2');	
+	return 'hello';
+}();
+//call
+*/
 
+var cars = {
+	car1:'sedan',
+	car2:'BMW',
+	
+	driveCar2:function(){
+		alert('I am driving BMW');
+	}
+}
 
+var exampleAtBasis = {
+	
+	number1:10,
+	number2:12,
+	letters: ['a','b',cars,'d'],
+	
+	checkVariableScope1: function(){
+		console.log(this.number1);
+		console.log(this.number2);
+	},
+	
+	checkVariableScope2: function(){
+		console.log(this.number1);
+		console.log(this.number2);
+	}
+};
+
+exampleAtBasis.letters[2].driveCar2();
+
+/*
 var number1 = 5;
     //number2 = 12;
 console.log("outside function: "+number1);
@@ -26,5 +68,5 @@ function checkVariableScope2(){
 
 //console.log("again outside function: "+number1);
 console.log("again outside function: "+number1);
-
+*/
 </script>
