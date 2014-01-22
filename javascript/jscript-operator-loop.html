@@ -1,0 +1,111 @@
+<script>
+	//type casting
+	
+	var aNumber  = 15;
+	var aString = 'abc';
+	var anotherString = '12abc';
+	var yetAnotherString = 'abc12';
+	var aStringLookLikeNumber = '12';
+	var aBoolean = true;
+	
+	//using default funtion
+	//number to string
+	///alert( aNumber +"\n"+ typeof aNumber +"\n"+ typeof aNumber.toString());
+	///alert( aNumber +"\n"+ typeof aNumber +"\n"+ typeof toString(aNumber));
+	//string to number
+	//alert(aString +"\n"+ typeof aString +"\n" + Number(aString) +"\n" + typeof window.Number(aString));
+	
+	//alert(aStringLookLikeNumber +"\n"+ typeof aStringLookLikeNumber +"\n" + Number(aStringLookLikeNumber) +"\n" + typeof window.Number(aStringLookLikeNumber));
+	
+	//alert(anotherString +"\n"+ typeof anotherString +"\n" + Number(anotherString) +"\n" + typeof window.Number(anotherString));
+	
+	//alert(yetAnotherString +"\n"+ typeof yetAnotherString +"\n" + Number(yetAnotherString) +"\n" + typeof window.Number(yetAnotherString));
+	
+	
+	
+	//alert(aString +"\n"+ typeof aString +"\n" + parseInt(aString) +"\n" + typeof window.parseInt(aString));
+	
+	//alert(aStringLookLikeNumber +"\n"+ typeof aStringLookLikeNumber +"\n" + parseInt(aStringLookLikeNumber) +"\n" + typeof window.parseInt(aStringLookLikeNumber));
+	
+	//alert(anotherString +"\n"+ typeof anotherString +"\n" + parseInt(anotherString) +"\n" + typeof window.parseInt(anotherString));
+	
+	//alert(yetAnotherString +"\n"+ typeof yetAnotherString +"\n" + parseInt(yetAnotherString) +"\n" + typeof window.parseInt(yetAnotherString));
+	
+	//alert(parseInt(12.64));
+	//alert(Number(12.23));
+	//var a = 12.23;
+	//alert(a);
+	//alert(window.a);
+	//alert(this.a);
+	//alert( toString(a) );
+	//var b = a.toString();
+	//alert( b +"\n"+ typeof b );	
+	//alert(parseInt('F', 10));
+	
+	//var a = 12.23893087436929;
+	//option a
+	//alert(parseInt(a * 1000)/1000);	
+	//var b = a.toFixed(3);
+	//alert(b);
+	
+	//alert(Boolean(aString));
+	//alert(Boolean(aNumber));
+	
+	var xyz;
+	//alert(Boolean(xyz));//undefined
+	//alert(Boolean(null));
+	//alert(Boolean(NaN));
+	//alert(Boolean(0));
+	//alert(Boolean(''));
+	//alert(Boolean(""));
+	
+	//anything else will be true
+	
+	//alert(Boolean(" ") + Boolean(" "))
+	
+	
+	//type casting: explicit
+	//alert(aNumber * aString); //15 * 'abc'
+	//alert(aNumber * aStringLookLikeNumber); //15 * '12'
+	//alert(aNumber * anotherString); //15 * '12abc'
+	//alert(aNumber + aStringLookLikeNumber); // by default does not do type casting
+	
+	//alert(typeof (aNumber+'') );
+	//var url = document.location + '';
+	//alert(typeof url);
+	//converting a boolean
+	//alert(typeof !!aNumber);
+	//alert(typeof !!aString);
+	
+	alert(!!xyz);//undefined
+	alert(!!null);
+	alert(!!NaN);
+	alert(!!0);
+	alert(!!'');
+	alert(!!"");
+	
+	
+	
+	//operators
+	//math operator: + - * / %
+	/*var a = 5;
+	var b = 7;
+	alert(b - a); //2
+	alert(b * a );//35
+	alert(b / a);//1.4
+	alert(b % a); // 2
+	alert(b + a);// 12*/
+	
+	//+ operator : is an overloaded operator: addition , concatenation
+
+	
+	//alert(aString + aNumber);
+	
+	
+	
+	
+	
+	
+	
+
+</script>
