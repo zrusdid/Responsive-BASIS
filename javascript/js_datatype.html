@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<span id="anExampleDiv">This is a div</span>
+<script>
+
+
+var aDivObj = window.document.getElementById('anExampleDiv1');
+alert(aDivObj + "\n"+ typeof aDivObj);
+
+//alert(sdfsdf+"   11");
+
+//alert(aDiv3);
+//alert(window.aDiv3);
+
+
+//alert(this+"\n"+window);
+//window.alert(this); //same as above
+
+var aDiv1 = '';//empty string
+var aDiv2 = "";//empty string
+var aDiv3 = 0;
+var aDiv4  = null;
+var aDiv5;
+aDiv5 = "mOINUL";
+
+
+alert(aDiv4 +" \n");
+
+//alert(window.aDiv3);
+
+alert(typeof aDiv1 +" witha a value: "+aDiv1 +"\n"+
+	typeof aDiv2 +" witha a value: "+aDiv2 +"\n"+
+	typeof aDiv3 +" witha a value: "+aDiv3 +"\n"+
+	typeof aDiv4 +" witha a value: "+aDiv4 +"\n"+
+	typeof aDiv5 +" witha a value: "+aDiv5 );
+
+//item 2-------
+var myCar;
+try{
+	//alert(myCar+'abc');	
+	alert(typeof myCar);	
+}catch(e){
+	alert(e.message +"\n"+ e.name);
+}
+
+//item1-----
+var aNumber = 12;
+var aBoolean = true;
+var aString = "Hello how are you";
+var aStringLookLikeNumber = '12';
+var aStringLookLikeBoolean = 'true';
+
+alert(typeof aNumber + "\n"+
+	  typeof aBoolean + "\n"+
+	  typeof aString + "\n"+
+	  typeof aStringLookLikeNumber + "\n"+
+	  typeof aStringLookLikeBoolean + "\n"
+	  );
+  
+//var sdfsdf;
+
+</script>
+</body>
+</html>
