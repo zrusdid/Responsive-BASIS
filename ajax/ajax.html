@@ -1,0 +1,42 @@
+<div id="responseArea">
+
+
+</div>
+<script>
+
+	var xhr = new XMLHttpRequest();	
+	//console.log(xhr.readyState);
+	
+	xhr.open('GET','http://tfbbd/ajax.xml',true);
+	
+	xhr.send();
+	//console.log(xhr.readyState);
+	
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState == 4){
+			//console.log('all data has been loaded.');
+			//console.log(xhr.getAllResponseHeaders());
+			//var contentText = xhr.responseText;
+			var contentXML = xhr.responseXML;
+			//alert(xhr.getResponseHeader('Content-type'));
+			//alert(contentXML);
+			//alert(contentText);
+			
+			var allStudents = contentXML.getElementsByTagName('student');
+			
+			var ul = document.createElement('UL');			
+			for(i=0; i < allStudents.length; i++){
+				var li = document.createElement('LI');
+				var sn = document.createTextNode(allStudents[i].getElementsByTagName('name')[0].firstChild.nodeValue);
+				li.appendChild(sn);
+				ul.appendChild(li);
+			}
+			
+			document.body.appendChild(ul);
+			
+			document.getElementById('responseArea').innerHTML = xhr.responseText;
+		}
+	}
+	
+	
+</script>

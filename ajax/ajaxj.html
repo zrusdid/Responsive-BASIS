@@ -1,0 +1,27 @@
+<div id="responseArea">
+
+
+</div>
+<script>
+
+	var xhr = new XMLHttpRequest();	
+	//console.log(xhr.readyState);
+	
+	xhr.open('GET','http://tfbbd/ajaxj.txt',true);
+	
+	xhr.send();
+	//console.log(xhr.readyState);
+	
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState == 4){
+			var jd = '('+xhr.responseText+')';
+			var jo = eval(jd);
+			//alert(typeof jd);
+			//alert(typeof jo);
+			alert(jo.glossary.title);
+		}
+		
+	}
+	
+	
+</script>

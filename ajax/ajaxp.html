@@ -1,0 +1,23 @@
+<div id="responseArea">
+
+
+</div>
+<script>
+
+	var xhr = new XMLHttpRequest();	
+	//console.log(xhr.readyState);
+	
+	xhr.open('POST','http://tfbbd/ajaxppost.php',true);
+	xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+	xhr.send('fname=I am from ajax');
+	//console.log(xhr.readyState);
+	
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState == 4){
+			
+		}
+		
+	}
+	
+	
+</script>
